@@ -4,75 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main Container for the Registration Form -->
-    <main>
-        <h2>Registration Form</h2>
-        
-        <form action="#" method="GET">
-            
-            <!-- Full Name Field -->
-            <div>
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
-            </div>
-            
-            <br>
+<div class="form-container">
+    <h2>Registration Form</h2>
 
-            <!-- Email Field -->
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
 
-            <br>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
 
-            <!-- Password Field -->
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
 
-            <br>
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
 
-            <!-- Gender Radio Buttons -->
-            <div>
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
+        <label>Course / Interest</label>
+        <select>
+            <option>Select your interest</option>
+            <option>Web Development</option>
+            <option>Java</option>
+            <option>Python</option>
+        </select>
 
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </div>
-
-            <br>
-
-            <!-- Course / Interest Dropdown -->
-            <div>
-                <label for="course">Select Course / Interest:</label>
-                <select id="course" name="course" required>
-                    <option value="" disabled selected>-- Choose an option --</option>
-                    <option value="frontend">Frontend Development</option>
-                    <option value="backend">Backend Development</option>
-                    <option value="fullstack">Fullstack Development</option>
-                    <option value="uiux">UI/UX Design</option>
-                </select>
-            </div>
-
-            <br>
-
-            <!-- Submit Button -->
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-
-        </form>
-    </main>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
