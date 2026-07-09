@@ -1,102 +1,240 @@
-🌊 Option 1: Blue Theme
-
-Replace your `:root` with:
-
-```css
-:root{
-  --bg-1:#071A35;
-  --bg-2:#0D2B52;
-  --card:rgba(255,255,255,0.06);
-  --card-border:rgba(255,255,255,0.12);
-  --violet:#3B82F6;
-  --violet-dark:#1D4ED8;
-  --gold:#60A5FA;
-  --text-main:#F8FAFC;
-  --text-muted:#B6C8E3;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
-```
 
----
-
-🌿 Option 2: Emerald Green Theme
-
-```css
-:root{
-  --bg-1:#041B14;
-  --bg-2:#08352A;
-  --card:rgba(255,255,255,0.05);
-  --card-border:rgba(255,255,255,0.1);
-  --violet:#10B981;
-  --violet-dark:#047857;
-  --gold:#34D399;
-  --text-main:#F1FFF9;
-  --text-muted:#A7D8C5;
-}
-```
-
----
-
- 🌅 Option 3: Orange Sunset Theme
-
-```css
-:root{
-  --bg-1:#2B0A0A;
-  --bg-2:#5A1E0A;
-  --card:rgba(255,255,255,0.05);
-  --card-border:rgba(255,255,255,0.1);
-  --violet:#F97316;
-  --violet-dark:#C2410C;
-  --gold:#FDBA74;
-  --text-main:#FFF8F5;
-  --text-muted:#F3C5A8;
-}
-```
-
----
-
- 🌸 Option 4: Pink & Purple Theme
-
-```css
-:root{
-  --bg-1:#220A2E;
-  --bg-2:#44135E;
-  --card:rgba(255,255,255,0.05);
-  --card-border:rgba(255,255,255,0.1);
-  --violet:#EC4899;
-  --violet-dark:#BE185D;
-  --gold:#F9A8D4;
-  --text-main:#FFF7FC;
-  --text-muted:#D9B3D4;
-}
-```
-
----
-
- ⚫ Option 5: Dark Black & Cyan Theme
-
-```css
-:root{
-  --bg-1:#050505;
-  --bg-2:#121212;
-  --card:rgba(255,255,255,0.04);
-  --card-border:rgba(255,255,255,0.08);
-  --violet:#06B6D4;
-  --violet-dark:#0891B2;
-  --gold:#22D3EE;
-  --text-main:#F5F5F5;
-  --text-muted:#A1A1AA;
-}
-```
-
-This theme gives a modern, cyber-style appearance.
-
-You can also adjust the page background gradients for a more dramatic effect:
-
-```css
 body{
-  background:
-    radial-gradient(circle at 20% 20%, rgba(6,182,212,.25), transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(34,211,238,.15), transparent 45%),
-    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+
+    background:linear-gradient(135deg,#08133d,#1f2e7c);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:40px;
 }
-```
+
+.container{
+
+    width:520px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    color:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+.week{
+
+    text-align:center;
+
+    color:#ffd43b;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#d8d8d8;
+
+    margin-bottom:30px;
+}
+
+form label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+span{
+
+    color:#ff8ba7;
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.15);
+
+    border:2px solid rgba(255,255,255,.25);
+
+    border-radius:14px;
+
+    padding:15px;
+}
+
+.input-box i{
+
+    color:white;
+
+    margin-right:12px;
+
+    font-size:20px;
+}
+
+.input-box input{
+
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:18px;
+}
+
+.input-box input::placeholder{
+
+    color:#ddd;
+}
+
+small{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#ddd;
+}
+
+.gender{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+}
+
+.gender label{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:15px;
+
+    background:rgba(255,255,255,.12);
+
+    border:2px solid rgba(255,255,255,.2);
+
+    border-radius:12px;
+
+    cursor:pointer;
+}
+
+.gender input{
+
+    margin-right:6px;
+}
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    border-radius:12px;
+
+    border:2px solid #ff7d9b;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:17px;
+
+    outline:none;
+}
+
+option{
+
+    color:black;
+}
+
+button{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#ffd500;
+
+    color:black;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#ffbf00;
+
+    transform:scale(1.03);
+}
+
+input:invalid{
+
+    border:none;
+}
+
+input:focus{
+
+    color:white;
+}
