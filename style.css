@@ -6,66 +6,62 @@
 }
 
 body{
-    background:#5a36d6;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
 }
 
-.container{
-    width:400px;
-}
-
-form{
+.form-container{
+    width:420px;
     background:#fff;
     padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.form-container:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
 }
 
 h2{
     text-align:center;
-    margin-bottom:20px;
-    color:#5a36d6;
-}
-
-.input-box{
-    margin-bottom:18px;
+    margin-bottom:25px;
+    color:#4b0082;
+    font-size:30px;
+    font-weight:bold;
 }
 
 label{
     display:block;
-    margin-bottom:6px;
+    margin-top:12px;
+    margin-bottom:5px;
     font-weight:bold;
 }
 
 input,
 select{
     width:100%;
-    padding:10px;
-    border:1px solid #bbb;
-    border-radius:6px;
-    font-size:15px;
+    padding:12px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    transition:0.3s;
 }
 
 input:focus,
 select:focus{
+    border-color:#6a11cb;
+    background:#f3ecff;
     outline:none;
-    border-color:#5a36d6;
+    box-shadow:0 0 10px rgba(106,17,203,0.4);
 }
 
 .gender{
-    display:flex;
-    gap:20px;
-    margin-top:8px;
-}
-
-.gender label{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    font-weight:normal;
+    margin:15px 0;
 }
 
 .gender input{
@@ -74,21 +70,35 @@ select:focus{
 
 button{
     width:100%;
-    padding:12px;
+    padding:14px;
+    margin-top:20px;
     border:none;
-    background:#5a36d6;
-    color:white;
-    font-size:17px;
     border-radius:8px;
+    background:#6a11cb;
+    color:white;
+    font-size:18px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
-    background:#4726bf;
+    background:#2575fc;
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
-.error{
-    color:red;
-    font-size:14px;
-    margin-top:5px;
+button:active{
+    transform:scale(0.98);
+}
+
+input,
+select,
+button{
+    transition:all .3s ease;
+}
+
+@media(max-width:500px){
+    .form-container{
+        width:90%;
+    }
 }
