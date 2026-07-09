@@ -1,240 +1,77 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+To decrease the space between elements, update these CSS values.
 
-body{
+### Reduce the container padding
 
-    background:linear-gradient(135deg,#08133d,#1f2e7c);
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    min-height:100vh;
-
-    padding:40px;
-}
-
+```css
 .container{
-
-    width:520px;
-
-    background:rgba(255,255,255,.12);
-
-    backdrop-filter:blur(10px);
-
-    border:1px solid rgba(255,255,255,.2);
-
-    border-radius:25px;
-
-    padding:35px;
-
-    color:white;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-
+    padding:20px;   /* Before: 35px */
 }
+```
 
-.week{
+### Reduce heading spacing
 
-    text-align:center;
-
-    color:#ffd43b;
-
-    font-weight:bold;
-
-    letter-spacing:2px;
-
-    margin-bottom:10px;
-}
-
+```css
 h1{
-
-    text-align:center;
-
-    font-size:42px;
-
-    margin-bottom:10px;
+    margin-bottom:5px;   /* Before: 10px */
 }
 
 .subtitle{
-
-    text-align:center;
-
-    color:#d8d8d8;
-
-    margin-bottom:30px;
+    margin-bottom:15px;  /* Before: 30px */
 }
+```
 
+### Reduce label spacing
+
+```css
 form label{
-
-    display:block;
-
-    margin-top:18px;
-
-    margin-bottom:8px;
-
-    font-size:18px;
-
-    font-weight:bold;
+    margin-top:10px;     /* Before: 18px */
+    margin-bottom:5px;   /* Before: 8px */
 }
+```
 
-span{
+### Reduce input padding
 
-    color:#ff8ba7;
-}
-
+```css
 .input-box{
-
-    display:flex;
-
-    align-items:center;
-
-    background:rgba(255,255,255,.15);
-
-    border:2px solid rgba(255,255,255,.25);
-
-    border-radius:14px;
-
-    padding:15px;
+    padding:10px 15px;   /* Before: 15px */
 }
+```
 
-.input-box i{
+### Reduce small text spacing
 
-    color:white;
-
-    margin-right:12px;
-
-    font-size:20px;
-}
-
-.input-box input{
-
-    width:100%;
-
-    background:transparent;
-
-    border:none;
-
-    outline:none;
-
-    color:white;
-
-    font-size:18px;
-}
-
-.input-box input::placeholder{
-
-    color:#ddd;
-}
-
+```css
 small{
-
-    display:block;
-
-    margin-top:8px;
-
-    color:#ddd;
+    margin-top:4px;      /* Before: 8px */
 }
+```
 
+### Reduce gender section spacing
+
+```css
 .gender{
-
-    display:flex;
-
-    gap:5px;
-
-    margin-top:10px;
+    gap:10px;            /* Before: 15px */
+    margin-top:5px;      /* Before: 10px */
 }
 
 .gender label{
-
-    flex:1;
-
-    text-align:center;
-
-    padding:15px;
-
-    background:rgba(255,255,255,.12);
-
-    border:2px solid rgba(255,255,255,.2);
-
-    border-radius:12px;
-
-    cursor:pointer;
+    padding:10px;        /* Before: 15px */
 }
+```
 
-.gender input{
+### Reduce dropdown spacing
 
-    margin-right:6px;
-}
-
+```css
 select{
-
-    width:100%;
-
-    padding:15px;
-
-    margin-top:10px;
-
-    border-radius:12px;
-
-    border:2px solid #ff7d9b;
-
-    background:rgba(255,255,255,.15);
-
-    color:white;
-
-    font-size:17px;
-
-    outline:none;
+    margin-top:5px;      /* Before: 10px */
+    padding:12px;        /* Before: 15px */
 }
+```
 
-option{
+### Reduce button spacing
 
-    color:black;
-}
-
+```css
 button{
-
-    width:100%;
-
-    margin-top:30px;
-
-    padding:16px;
-
-    border:none;
-
-    border-radius:14px;
-
-    background:#ffd500;
-
-    color:black;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
+    margin-top:20px;     /* Before: 30px */
+    padding:14px;        /* Before: 16px */
 }
-
-button:hover{
-
-    background:#ffbf00;
-
-    transform:scale(1.03);
-}
-
-input:invalid{
-
-    border:none;
-}
-
-input:focus{
-
-    color:white;
-}
+```
