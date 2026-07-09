@@ -41,7 +41,7 @@ body{
 .eyebrow{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:5px;
   justify-content:center;
   margin-bottom:14px;
 }
@@ -58,7 +58,7 @@ body{
 
 .eyebrow p{
   font-size:12px;
-  letter-spacing:3px;
+  letter-spacing:2px;
   text-transform:uppercase;
   color:var(--gold);
   font-weight:600;
