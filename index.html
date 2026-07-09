@@ -112,26 +112,20 @@
 
         <!-- Course -->
         <div class="field">
-            <label for="course">Choose Your Course <span class="req">*</span></label>
+    <label for="course">Select Your Course <span class="req">*</span></label>
 
-            <select id="course" name="course" required>
+    <select id="course" name="course" required>
+        <option value="" disabled selected>Select Your Course</option>
 
-                <option value="" disabled selected>
-                    Select Your Course
-                </option>
-
-                <option>Frontend Development</option>
-                <option>Backend Development</option>
-                <option>Full Stack Development</option>
-                <option>Data Science</option>
-                <option>UI / UX Design</option>
-                <option>Artificial Intelligence</option>
-                <option>Cyber Security</option>
-
-            </select>
-
-        </div>
-
+        <option value="bca">Bachelor of Computer Applications (BCA)</option>
+        <option value="bba">Bachelor of Business Administration (BBA)</option>
+        <option value="bcom">Bachelor of Commerce (B.Com)</option>
+        <option value="ba">Bachelor of Arts (B.A.)</option>
+        <option value="bsc">Bachelor of Science (B.Sc.)</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+        
         <!-- Button -->
         <button type="submit">
 
