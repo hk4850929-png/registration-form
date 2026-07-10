@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function(e){
-    e.preventDefault();
+form.addEventListener("submit", function(event){
+    event.preventDefault();
 
     alert("Registration Successful!");
 });
